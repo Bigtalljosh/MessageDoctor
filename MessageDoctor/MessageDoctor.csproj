@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Log4net.Extensions.Logging" Version="1.0.0" />
+    <PackageReference Include="logentries.log4net" Version="2.8.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.2" />
+    <PackageReference Include="Pat.DataProtection" Version="1.0.12" />
+    <PackageReference Include="Pat.Sender.DataProtectionEncryption" Version="2.0.15" />
+    <PackageReference Include="Pat.Sender" Version="5.0.25" />
+    <PackageReference Include="Pat.Sender.NetCoreLog" Version="5.0.25" />
+    <PackageReference Include="Pat.Subscriber" Version="3.0.42" />
+    <PackageReference Include="Pat.Subscriber.NetCoreDependencyResolution" Version="3.0.42" />
+    <PackageReference Include="Pat.Subscriber.RateLimiterPolicy" Version="3.0.42" />
+    <PackageReference Include="Pat.Subscriber.Telemetry.StatsD" Version="3.0.42" />
+    <PackageReference Include="PB.ITOps.Logging" Version="5.0.1" />
+    <PackageReference Include="Queue.Messages" Version="2.1.29" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configuration\appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Configuration\log4net.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
