@@ -1,4 +1,4 @@
-﻿using MessageDoctor.Messages;
+﻿using MessageDoctor.Contract;
 using Pat.Sender;
 using System;
 using System.Threading.Tasks;
@@ -16,7 +16,7 @@ namespace MessageDoctor
 
         public async Task PerformMagic()
         {
-            var messageToPublish = new TestMessage
+            var messageToPublish = new TestMessageV1
             {
                 Id = Guid.NewGuid().ToString()
             };

@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageDoctor", "MessageDoctor.csproj", "{7599FBC4-F06C-4527-B41A-4BFAC48EE26B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageDoctor", "MessageDoctor.csproj", "{7599FBC4-F06C-4527-B41A-4BFAC48EE26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageDoctor.TestSubscriber", "..\MessageDoctorTestSubscriber\MessageDoctor.TestSubscriber.csproj", "{7D3661F7-965E-4F42-8F68-D2FFA894B29F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageDoctor.Contract", "..\MessageDoctor.Contract\MessageDoctor.Contract.csproj", "{FD4014C8-D103-4FDE-A44C-4BB116C7760F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7599FBC4-F06C-4527-B41A-4BFAC48EE26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7599FBC4-F06C-4527-B41A-4BFAC48EE26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7599FBC4-F06C-4527-B41A-4BFAC48EE26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3661F7-965E-4F42-8F68-D2FFA894B29F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3661F7-965E-4F42-8F68-D2FFA894B29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3661F7-965E-4F42-8F68-D2FFA894B29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3661F7-965E-4F42-8F68-D2FFA894B29F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4014C8-D103-4FDE-A44C-4BB116C7760F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4014C8-D103-4FDE-A44C-4BB116C7760F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4014C8-D103-4FDE-A44C-4BB116C7760F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4014C8-D103-4FDE-A44C-4BB116C7760F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

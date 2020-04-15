@@ -31,14 +31,5 @@
   <ItemGroup>
     <ProjectReference Include="..\MessageDoctor.Contract\MessageDoctor.Contract.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Configuration\appsettings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Configuration\log4net.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
+  
 </Project>

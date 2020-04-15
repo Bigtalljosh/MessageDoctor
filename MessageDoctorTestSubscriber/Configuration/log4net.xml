@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+  <appender name="InsightAppender" type="log4net.Appender.InsightAppender, R7Insight.Log4net">
+    <token value="#{TOKEN_HERE}" />
+    <UseSsl value="true" />
+    <Region value="eu" />
+    <layout type="log4net.Layout.PatternLayout">
+      <param name="ConversionPattern" value="%d{ddd MMM dd HH:mm:ss zzz yyyy} %property{deploymentHost} %level%: %property{correlationId} %logger %: %m" />
+    </layout>
+  </appender>
+  <root>
+    <level value="DEBUG" />
+    <appender-ref ref="InsightAppender" />
+  </root>
+</log4net>

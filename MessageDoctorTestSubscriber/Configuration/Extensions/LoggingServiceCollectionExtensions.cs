@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using PB.ITOps.Logging;
 using System.IO;
 
-namespace MessageDoctor.Configuration.Extensions
+namespace MessageDoctorTestSubscriber.Configuration.Extensions
 {
     internal static class LoggingServiceCollectionExtensions
     {

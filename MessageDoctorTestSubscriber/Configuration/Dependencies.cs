@@ -1,10 +1,12 @@
-﻿using MessageDoctor.Configuration.Extensions;
+﻿using MessageDoctor.TestSubscriber.Handlers;
+using MessageDoctorTestSubscriber.Configuration.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Pat.Subscriber.NetCoreDependencyResolution;
 using System;
 using System.IO;
 
-namespace MessageDoctor.Configuration
+namespace MessageDoctorTestSubscriber.Configuration
 {
     internal static class Dependencies
     {
@@ -18,7 +20,7 @@ namespace MessageDoctor.Configuration
                 .AddLog4NetLogging(configuration)
                 .AddBasePatLiteServices(configuration)
                 .AddStatsDTelemetry(configuration)
-                .AddTransient<MessageDoctorService, MessageDoctorService>()
+                .AddHandlersFromAssemblyContainingType<TestMessageV1Handler>()
                 .BuildServiceProvider();
 
             return serviceProvider;
